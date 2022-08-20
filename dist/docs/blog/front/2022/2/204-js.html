@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS数据类型-数据类型 | 万事屋的打工仔</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b0aae218897fa9d8a9f76e9a77e0b3c6";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+    <meta name="description" content="万事屋的打工仔,是万事屋内一个热衷于充实自己的菜鸡coder。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.bafefec6.css" as="style"><link rel="preload" href="/assets/js/app.cd6ffb1a.js" as="script"><link rel="preload" href="/assets/js/3.e3252985.js" as="script"><link rel="preload" href="/assets/js/1.0168b904.js" as="script"><link rel="preload" href="/assets/js/18.dca9f7bc.js" as="script"><link rel="prefetch" href="/assets/js/10.d3919a3c.js"><link rel="prefetch" href="/assets/js/11.a6f3065a.js"><link rel="prefetch" href="/assets/js/12.fa09baa3.js"><link rel="prefetch" href="/assets/js/13.07da1f64.js"><link rel="prefetch" href="/assets/js/14.24a08a1c.js"><link rel="prefetch" href="/assets/js/15.87dc8f1e.js"><link rel="prefetch" href="/assets/js/16.e9147d75.js"><link rel="prefetch" href="/assets/js/17.6f043778.js"><link rel="prefetch" href="/assets/js/19.665b133e.js"><link rel="prefetch" href="/assets/js/20.c80755f0.js"><link rel="prefetch" href="/assets/js/21.94f46c72.js"><link rel="prefetch" href="/assets/js/22.13ad7632.js"><link rel="prefetch" href="/assets/js/23.57bf24db.js"><link rel="prefetch" href="/assets/js/24.872f2dce.js"><link rel="prefetch" href="/assets/js/25.7402f5b5.js"><link rel="prefetch" href="/assets/js/26.d8093878.js"><link rel="prefetch" href="/assets/js/27.644c3d6f.js"><link rel="prefetch" href="/assets/js/28.9502b789.js"><link rel="prefetch" href="/assets/js/29.9a438ebc.js"><link rel="prefetch" href="/assets/js/30.b85a4318.js"><link rel="prefetch" href="/assets/js/31.5275a115.js"><link rel="prefetch" href="/assets/js/32.7a9ac7ad.js"><link rel="prefetch" href="/assets/js/33.019b9ab4.js"><link rel="prefetch" href="/assets/js/34.caec9ff5.js"><link rel="prefetch" href="/assets/js/35.06d6bc32.js"><link rel="prefetch" href="/assets/js/4.91007d3d.js"><link rel="prefetch" href="/assets/js/5.d4e79796.js"><link rel="prefetch" href="/assets/js/6.ee450dbc.js"><link rel="prefetch" href="/assets/js/7.94e4c0c0.js"><link rel="prefetch" href="/assets/js/8.bafcc886.js"><link rel="prefetch" href="/assets/js/9.68e68483.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bafefec6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-b51f5500><div data-v-b51f5500><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-b51f5500 data-v-b51f5500><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-5cb9a64e data-v-b51f5500 data-v-b51f5500><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>万事屋的打工仔</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>万事屋的打工仔</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-b51f5500><div data-v-b51f5500><div id="smart" class="wrapper-page" style="background-image:url(https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/note.jpg);background-position-x:center;background-position-y:center;background-size:cover;background-repeat-x:no-repeat;background-repeat-y:no-repeat;" data-v-b51f5500><header class="navbar" data-v-b51f5500><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="万事屋的打工仔" class="logo"> <span class="site-name">万事屋的打工仔</span></a> <div class="links"><div id="dayNightSwitch" class="generalWrapper" data-v-32f44868><a class="click" data-v-32f44868><div class="onOff daySwitch" data-v-32f44868><div class="star star1" data-v-32f44868></div> <div class="star star2" data-v-32f44868></div> <div class="star star3" data-v-32f44868></div> <div class="star star4" data-v-32f44868></div> <div class="star star5" data-v-32f44868></div> <div class="star sky" data-v-32f44868></div> <div class="sunMoon" data-v-32f44868><div class="crater crater1" data-v-32f44868></div> <div class="crater crater2" data-v-32f44868></div> <div class="crater crater3" data-v-32f44868></div> <div class="cloud part1" data-v-32f44868></div> <div class="cloud part2" data-v-32f44868></div></div></div></a></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/学习笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/dev-problem/" class="nav-link"><i class="iconfont undefined"></i>
+  dev-problem
+</a></li><li class="dropdown-item"><!----> <a href="/categories/杂七杂八/" class="nav-link"><i class="iconfont undefined"></i>
+  杂七杂八
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-b51f5500></div> <aside class="sidebar" data-v-b51f5500><div class="personal-info-wrapper" data-v-03833281 data-v-b51f5500><img src="https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/6b217a3d5378ac07b1af16005c883b9.jpg" alt="author-avatar" class="personal-img" data-v-03833281> <h3 class="name" data-v-03833281>
+    万事屋的打工仔
+  </h3> <div class="num" data-v-03833281><div data-v-03833281><h3 data-v-03833281>22</h3> <h6 data-v-03833281>文章</h6></div> <div data-v-03833281><h3 data-v-03833281>5</h3> <h6 data-v-03833281>标签</h6></div></div> <hr data-v-03833281></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/学习笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/categories/dev-problem/" class="nav-link"><i class="iconfont undefined"></i>
+  dev-problem
+</a></li><li class="dropdown-item"><!----> <a href="/categories/杂七杂八/" class="nav-link"><i class="iconfont undefined"></i>
+  杂七杂八
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-5cb9a64e data-v-b51f5500><h3 class="title" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e>JS数据类型-数据类型</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><input type="password" value="" data-v-5cb9a64e> <span data-v-5cb9a64e>Konck! Knock!</span> <button data-v-5cb9a64e>OK</button></label> <div class="footer" style="display:none;" data-v-5cb9a64e data-v-5cb9a64e><span data-v-5cb9a64e><i class="iconfont reco-theme" data-v-5cb9a64e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-5cb9a64e>vuePress-theme-reco</a></span> <span data-v-5cb9a64e><i class="iconfont reco-copyright" data-v-5cb9a64e></i> <a data-v-5cb9a64e><span data-v-5cb9a64e>万事屋的打工仔</span>
+            
+          <!---->
+          2022
+        </a></span></div></div></div> <div data-v-b51f5500><main class="page" style="padding-right:0;"><div class="page-title" style="display:none;"><h1 class="title">JS数据类型-数据类型</h1> <div class="page-info" data-v-0efa1f05><i class="iconfont reco-account" data-v-0efa1f05><span data-v-0efa1f05>万事屋的打工仔</span></i> <i class="iconfont reco-date" data-v-0efa1f05><span data-v-0efa1f05>2022-02-10</span></i> <!----> <i class="iconfont reco-tag tags" data-v-0efa1f05><span class="tag-item" data-v-0efa1f05>前端</span><span class="tag-item" data-v-0efa1f05>javaScript</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h3 id="_3、数据类型"><a href="#_3、数据类型" class="header-anchor">#</a> 3、数据类型</h3> <p>简单数据类型
+Number    数字类型；(不区分整数、浮点数、特殊值，都是Number类型)
+String    字符串类型；
+undefined undefined类型；(表示未定义)
+Boolean   布尔类型；(只有true和false两个字面量的值，必须是小写字母)
+null      null类型；(本身是一个数据，从逻辑较多，null值表示一个空对象指针)(如果定义的变量准备在将来用于保存对象，最好将变量初始化为null)
+另外，还有复杂数据类型
+Object    对象类型</p> <h5 id="检测数据类型的方法"><a href="#检测数据类型的方法" class="header-anchor">#</a> 检测数据类型的方法</h5> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(typeof(1)); 
+    console.log(typeof(infinity));
+    console.log(typeof(&quot;1&quot;))；
+    console.log(typeof(undefined));
+    console.log(typeof(true));
+    console.log(typeof(null));
+    var a = &quot;123&quot;
+    console.log(typeof(a));
+    &lt;!-- 也可以typeof *的形式 --&gt;
+    console.log(typeof null);
+    var a = &quot;123&quot;
+    console.log(typeof a);
+&lt;/script&gt;
+</code></pre></div><p>推荐使用带括号的第一个方法，第二个方法会遇到下列情况</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(typeof(1+2));
+    console.log(typeof 1+2);
+&lt;/script&gt;
+</code></pre></div><p><img src="https://gitee.com/Mxinzhijie/lgnote-image/blob/master/js-part-1/dateTest.jpg" alt="Image text"></p> <h5 id="转换成字符串类型"><a href="#转换成字符串类型" class="header-anchor">#</a> 转换成字符串类型</h5> <p>1、数据.toString()方法</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(true.toString());
+&lt;/script&gt;
+</code></pre></div><p>2、String(数据)方法，有些值不能toString(),这个时候可以使用String()。比如：undefined和null</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(String(23));
+    console.log(String(undefined));
+    console.log(String(null));
+&lt;/script&gt;
+</code></pre></div><p>3、+号拼接字符串方式，num + &quot;&quot;，当+两边一个操作符 是字符串类型，一个操作符是其他类型的时候，会先把其他类型转换成字符串再进行字符串拼接，返回字符串；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(&quot;1&quot;+2);
+    &lt;!-- 若不想带数字可以引空字符串 --&gt;
+    console.log(&quot;&quot;+true);
+&lt;/script&gt;
+</code></pre></div><h5 id="转换成数值类型"><a href="#转换成数值类型" class="header-anchor">#</a> 转换成数值类型</h5> <p><font color="darkblue">方法一</font>
+转型函数Number()可以用于任何数据类型，将其他数据类型转为数字
+1、字符串：纯数字→对应数字；空字符串和空白字符串→0；非空非纯数字字符串→NaN；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(Number(&quot;123&quot;)); →123
+    console.log(Number(&quot;&quot;)); →0
+    console.log(Number(&quot; &quot;)); →0
+    console.log(Number(&quot;123abc&quot;)); →NaN
+&lt;/script&gt;
+</code></pre></div><p>2、布尔值：true→1；false→0；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(Number(true)); →1
+    console.log(Number(false)); →0
+&lt;/script&gt;
+</code></pre></div><p>3、undefined：转为NaN；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(Number(undefined)); →NaN
+&lt;/script&gt;
+</code></pre></div><p>4、null：转为0</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(Number(null)); →0
+&lt;/script&gt;
+</code></pre></div><p><font color="darkblue">方法二</font>
+parseInt()方法：字符串转整数方法
+作用：第一，对浮点数进行取证操作；第二，将字符串转为整数数字。
+①对数字取整功能，直接舍弃小数部分，只保留整数；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(parseInt(23.45)); →23
+&lt;/script&gt;
+</code></pre></div><p>②将字符串转为整数数字，也包含取整功能；
+字符串中，必须是纯数字字符串，或者数字字符开头的字符串，才能转换为正常数字，且支取整数部分，如果不是数字打头的字符串，会转换为NaN。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(parseInt(&quot;123.45&quot;));  →123
+    console.log(parseInt(&quot;123.46abc&quot;));   →123
+    console.log(parseInt(&quot;a123.46abc&quot;));   →NaN
+    console.log(parseInt(&quot; &quot;));   →NaN
+&lt;/script&gt;
+</code></pre></div><p><font color="darkblue">方法三</font>
+parseFloat()方法：字符串转浮点数方法
+作用：将字符串转为浮点数数字；
+要求：满足浮点数数字字符必须在字符串开始，如果不在开始返回值都是NaN；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(parseFloat(&quot;23.45&quot;));  →23.45
+    console.log(parseFloat(&quot;23.45abc&quot;)); →23.45
+    console.log(parseFloat(&quot;a23.45abc&quot;)); →NaN
+&lt;/script&gt;
+</code></pre></div><h5 id="转换成布尔类型"><a href="#转换成布尔类型" class="header-anchor">#</a> 转换成布尔类型</h5> <p>转型函数Boolean()可以用于任何数据类型，将其他数据类型转为布尔类型的值
+转为false：NaN、0、&quot;&quot;空字符串、null、undefined；
+转为true：非0 非NaN数字、非空字符串；</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    console.log(Boolean(NaN));
+    console.log(Boolean(0));
+    console.log(Boolean(&quot;&quot;));
+    console.log(Boolean(NaN));
+    console.log(Boolean(123));
+    console.log(Boolean(&quot;123&quot;));
+&lt;/script&gt;
+</code></pre></div><h5 id="转换数据类型的应用"><a href="#转换数据类型的应用" class="header-anchor">#</a> 转换数据类型的应用</h5> <p>例如：利用变量接受prompt()语句返回的用户输入数据，检测数据类型后，得到的是<font color="red">字符串类型</font>；如果想要获取的是数字类型的数据，则需要先将得到的字符串转为数字，避免出险字符串参与出现运算的情况</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+    var num = parseInt(prompt(&quot;请输入你的年龄&quot;));
+    &lt;!-- prompt语句可以返回用户输入的数据 --&gt;
+    var age = num + 50;
+    &lt;!-- 或 --&gt;
+    var num = prompt(&quot;请输入你的年龄&quot;)；
+    num = parseInt(num) + 50;
+&lt;/script&gt;
+</code></pre></div><h5 id="谷歌浏览器控制台颜色区分数据类型"><a href="#谷歌浏览器控制台颜色区分数据类型" class="header-anchor">#</a> 谷歌浏览器控制台颜色区分数据类型</h5> <table><thead><tr><th>字符串</th> <th>黑色</th></tr></thead> <tbody><tr><td>数值</td> <td>蓝色</td></tr> <tr><td>布尔</td> <td>蓝色</td></tr> <tr><td>undefined</td> <td>灰色</td></tr> <tr><td>null</td> <td>灰色</td></tr></tbody></table> <hr></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:290px;display:none;" data-v-5775ee02>
+      欢迎来到我的博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="250" height="320" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://assets.smallsunnyfox.com/music/2.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://assets.smallsunnyfox.com/music/2.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://assets.smallsunnyfox.com/music/2.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>강남역 4번 출구</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Plastic / Fallin` Dild</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div></div></div>
+    <script src="/assets/js/app.cd6ffb1a.js" defer></script><script src="/assets/js/3.e3252985.js" defer></script><script src="/assets/js/1.0168b904.js" defer></script><script src="/assets/js/18.dca9f7bc.js" defer></script>
+  </body>
+</html>
