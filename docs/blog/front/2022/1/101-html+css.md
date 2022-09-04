@@ -1,7 +1,8 @@
 ---
 title: HTML学习笔记
 date: 2022-01-15
-cover: https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/note.jpg
+cover: https://pic.imgdb.cn/item/630b5e6a16f2c2beb17bd98b.jpg
+tags:
  - 前端
  - HTML
  - CSS

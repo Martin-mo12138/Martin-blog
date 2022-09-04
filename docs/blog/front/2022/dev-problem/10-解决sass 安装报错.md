@@ -1,7 +1,7 @@
 ---
 title: 解决sass 安装报错，踩坑记
 date: 2022-05-20
-cover: https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/devproblem.jpg
+cover: https://pic.imgdb.cn/item/630b5e6716f2c2beb17bd66f.jpg
 tags:
  - 前端
  - dev-problem

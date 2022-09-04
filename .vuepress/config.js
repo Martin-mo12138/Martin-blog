@@ -1,6 +1,7 @@
 module.exports = {
   "title": "万事屋的打工仔",
-  "description": "万事屋的打工仔,是万事屋内一个热衷于充实自己的菜鸡coder。",
+  "description": "一个热衷于充实自己的菜鸡coder。",
+  "base": '/',
   "dest": "dist",
   plugins: [
     [
@@ -52,7 +53,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/favicon.ico"
+        "href": "https://pic.imgdb.cn/item/630f1a0d16f2c2beb1a5ded2.png"
       }
     ],
     [
@@ -133,9 +134,9 @@ module.exports = {
     // "huawei": true, //首页出现华为文案
     "search": true,
     "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
+    "lastUpdated": false,
     "author": "万事屋的打工仔",
-    "authorAvatar": "https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/6b217a3d5378ac07b1af16005c883b9.jpg",
+    "authorAvatar": "https://pic.imgdb.cn/item/630f1a0916f2c2beb1a5dcde.png",
     // "record": "你的备案号 ", //icp备案
     "startYear": "2022",
     "info": "一名追求技术喜欢安静的程序猿",
@@ -181,18 +182,18 @@ module.exports = {
     }
     ],
     "covers": [
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/7.jpg',
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/1.jpg',
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/2.jpg',
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/3.jpg',
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/4.jpg',
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/5.jpg',
-      'https://cdn.jsdelivr.net/gh/Martin-mo12138/picbed/8.jpg'
+      'https://pic.imgdb.cn/item/630b5e5b16f2c2beb17bcc70.jpg',
+      'https://pic.imgdb.cn/item/630b5e5016f2c2beb17bc1ce.jpg',
+      'https://pic.imgdb.cn/item/630b5e5216f2c2beb17bc38b.jpg',
+      'https://pic.imgdb.cn/item/630b5e5416f2c2beb17bc5f0.jpg',
+      'https://pic.imgdb.cn/item/630b5e5916f2c2beb17bcba4.jpg',
+      'https://pic.imgdb.cn/item/630b5e6216f2c2beb17bd184.jpg',
+      'https://pic.imgdb.cn/item/630b5e2d16f2c2beb17b9b78.jpg'
     ],
     "codeTheme": "tomorrow"
   },
   "markdown": {
-    "lineNumbers": false
+    "lineNumbers": true
   },
   // configureWebpack: (config, isServer) => {
   //   if (!isServer) {
